@@ -110,7 +110,7 @@ The log outputs of your action will provide URLs for you to view the resources t
 
 
 
-## 7.Arm template to deploy azure resources
+## Arm template to deploy azure resources
 The workflow file 'deploy_infra.yml' uses action 'mlopstemplates/aml_configure' to deploy arm template to azure.
 Arm Template is present in './cloud/.azure/' folder (default name='arm_deploy.json') is used to deploy azure resources to azure . It uses the parameters provided in file 'azure.params.json' to create new resources or update the resources if they are already present.
 ### Documentation of template file parameters
@@ -123,7 +123,7 @@ Arm Template is present in './cloud/.azure/' folder (default name='arm_deploy.js
 | `GitHubBranch`  | Name of the branch containing azure function code. |
 | `eventGridTopicPrefix`   | The name of the Event Grid custom topic. |
 | `eventGridSubscriptionName`                 | The prefix of the Event Grid custom topic's subscription. |
-| `FunctionName`        |azure function name used|
+| `FunctionName`        |name of azure function used|
 | `subscriptionID` | azure subscription ID being used for deployment |
 | `GitHubURL`           | The URL of GitHub (ending by .git) containing azure function code. |
 | `funcProjectFolder`               | The name of folder containing the function code. |
